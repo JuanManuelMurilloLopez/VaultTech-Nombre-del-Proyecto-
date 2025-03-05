@@ -58,3 +58,7 @@ exports.get_analisis_otis = (request, response, next) => {
 exports.get_analisis_colores = (request, response, next) => {
     response.send('Analisis Colores');
 };
+
+exports.get_catalogo_pruebas = (request, response, next) => {
+    response.send('Catalogo de pruebas');
+};

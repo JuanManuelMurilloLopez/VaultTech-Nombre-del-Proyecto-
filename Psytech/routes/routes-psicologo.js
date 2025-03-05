@@ -5,7 +5,7 @@ const path = require('path');
 const controller = require('../controllers/controller-psicologo');
 
 //Rutas del portal de los Psicologos
-router.get('/principal-psicologos', controller.get_principal_psicologos);
+router.get('/principal', controller.get_principal_psicologos);
 
 router.get('/catalogo-instituciones', controller.get_catalogo_instituciones);
 
@@ -34,5 +34,7 @@ router.get('/prueba-colores', controller.get_prueba_colores);
 router.get('/analisis-otis', controller.get_analisis_otis);
 
 router.get('/analisis-colores', controller.get_analisis_colores);
+
+router.get('/catalogo-pruebas', controller.get_catalogo_pruebas);
 
 module.exports = router;
