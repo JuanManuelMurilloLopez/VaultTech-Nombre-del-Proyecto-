@@ -24,4 +24,6 @@ router.get('/prueba-otis', controller.get_prueba_otis);
 
 router.get('/prueba-colores', controller.get_prueba_colores);
 
+router.get('/respuestas-enviadas', controller.get_respuestas_enviadas);
+
 module.exports = router;

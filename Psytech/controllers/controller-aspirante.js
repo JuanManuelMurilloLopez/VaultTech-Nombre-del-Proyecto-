@@ -34,3 +34,7 @@ exports.get_prueba_otis = (request, response, next) => {
 exports.get_prueba_colores = (request, response, next) => {
     response.send('Prueba Colores');
 };
+
+exports.get_respuestas_enviadas = (request, response, next) => {
+    response.send('Respuestas enviadas');
+};
