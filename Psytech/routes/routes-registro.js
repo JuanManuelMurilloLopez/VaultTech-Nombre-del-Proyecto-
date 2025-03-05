@@ -4,9 +4,6 @@ const router = express.Router();
 const path = require('path');
 const controller = require('../controllers/controller-registro');
 
-//Pestaña de Log In
-router.get('/login', controller.get_login);
-
 //Rutas de registros de Psicologos y Coordinadores
 router.get('/psicologos-registrados', controller.get_psicologos_registrados);
 

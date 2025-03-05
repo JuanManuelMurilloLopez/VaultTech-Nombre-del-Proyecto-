@@ -3,6 +3,9 @@ const app = express();
 
 const path = require('path');
 
+const rutasInicioSesion = require('./routes/routes-inicioSesion');
+app.use('/', rutasInicioSesion);
+
 const rutasRegistro = require('./routes/routes-registro');
 app.use('/registro', rutasRegistro);
 
@@ -19,10 +22,5 @@ app.set('views', 'views');
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
-
-app.use((request, response, next) => {
-    console.log('Hola mundo!');
-    next();
-});
 
 app.listen(5050);

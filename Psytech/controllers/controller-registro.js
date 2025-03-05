@@ -1,8 +1,3 @@
-//Pestaña de Log In
-exports.get_login = (request, response, next) => {
-    response.send('Login');
-};
-
 //Rutas de registros de Psicologos y Coordinadores
 exports.get_psicologos_registrados = (request, response, next) => {
     response.send('Psicologos Registrados');
