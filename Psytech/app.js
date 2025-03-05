@@ -6,8 +6,8 @@ const path = require('path');
 const rutasInicioSesion = require('./routes/routes-inicioSesion');
 app.use('/', rutasInicioSesion);
 
-const rutasRegistro = require('./routes/routes-registro');
-app.use('/registro', rutasRegistro);
+const rutasCoordinador = require('./routes/routes-coordinador');
+app.use('/coordinador', rutasCoordinador);
 
 const rutasAspirante = require('./routes/routes-aspirante');
 app.use('/aspirante', rutasAspirante);

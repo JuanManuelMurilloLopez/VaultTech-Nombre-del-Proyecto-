@@ -11,7 +11,7 @@ exports.get_editar_psicologos = (request, response, next) => {
     response.send('Editar Psicologos');
 };
 
-exports.get_coordinador_registrados = (request, response, next) => {
+exports.get_coordinadores_registrados = (request, response, next) => {
     response.send('Coordinadores Registrados');
 };
 
